@@ -1,0 +1,149 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  max-width: 1200px;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 400px);
+  justify-content: center;
+  gap: 5px;
+}
+.container .box {
+  background: blue;
+  width: 400px;
+  height: 500px;
+}
+/*----------------------------------------*/
+
+.container_2 {
+  display: grid;
+  width: 1200px;
+  grid-template-areas:
+    "1 1 1"
+    "2 3 3"
+    "4 4 5"
+    "6 7 8";
+  gap: 5px;
+  margin: 0 auto;
+}
+.box_1 {
+  background: chocolate;
+  width: 100%;
+  height: 200px;
+  grid-area: 1;
+}
+.box_2 {
+  background: red;
+  width: 100%;
+  height: 300px;
+  grid-area: 2;
+}
+.box_3 {
+  background: red;
+  width: 100%;
+  height: 300px;
+  grid-area: 3;
+}
+.box_4 {
+  background: red;
+  width: 100%;
+  height: 300px;
+  grid-area: 4;
+}
+.box_5 {
+  background: red;
+  width: 100%;
+  height: 300px;
+  grid-area: 5;
+}
+.box_6 {
+  background: red;
+  width: 100%;
+  height: 300px;
+  grid-area: 6;
+}
+.box_7 {
+  background: red;
+  width: 100%;
+  height: 300px;
+  grid-area: 7;
+}
+.box_8 {
+  background: red;
+  width: 100%;
+  height: 300px;
+  grid-area: 8;
+}
+
+section {
+  width: 1100px;
+  height: auto;
+  display: grid;
+  margin: auto;
+  gap: 25px;
+  grid-template-areas:
+    "item1 item1 item1"
+    "item2 item3 item3"
+    "item4 item4 item5"
+    "item6 item7 item8";
+}
+
+section .content:nth-child(1) {
+  grid-area: item1;
+  background-color: yellow;
+  width: 100%;
+  height: 300px;
+}
+
+section .content:nth-child(2) {
+  grid-area: item2;
+  background-color: blue;
+  width: 100%;
+  height: 300px;
+}
+
+section .content:nth-child(3) {
+  grid-area: item3;
+  background-color: black;
+  width: 100%;
+  height: 300px;
+}
+
+section .content:nth-child(4) {
+  grid-area: item4;
+  background-color: black;
+  width: 100%;
+  height: 300px;
+}
+
+section .content:nth-child(5) {
+  grid-area: item5;
+  background-color: blue;
+  width: 100%;
+  height: 300px;
+}
+
+section .content:nth-child(6) {
+  grid-area: item6;
+  background-color: red;
+  width: 100%;
+  height: 300px;
+}
+
+section .content:nth-child(7) {
+  grid-area: item7;
+  background-color: red;
+  width: 100%;
+  height: 300px;
+}
+
+section .content:nth-child(8) {
+  grid-area: item8;
+  background-color: red;
+  width: 100%;
+  height: 300px;
+}

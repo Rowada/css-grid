@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  width: 1200px;
+  height: 100vh;
+  display: grid;
+  margin: auto;
+  grid-template-columns: repeat(3, 400px);
+  grid-template-rows: repeat(10, 400px);
+  gap: 10px;
+  /* grid-template-areas:
+    "item1 item2 item3"
+    "item4 item5 item6"
+    "item7 item8 item9"
+    "a item10 item11"; */
+}
+section .trois {
+  grid-row: span 3;
+  background-color: cornflowerblue;
+}
+section .deux {
+  grid-row: span 2;
+  background-color: cornflowerblue;
+}
+section .premier {
+  grid-row: span 1;
+  background-color: cornflowerblue;
+}
